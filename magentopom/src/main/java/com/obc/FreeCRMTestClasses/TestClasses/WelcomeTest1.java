@@ -3,7 +3,9 @@ public class WelcomeTest {
 
  public WebDriver driver;
 @BeforeSuite
+//we are adding one more method to add testng annotations
  public void firsttest() {
+
   public void welcome1 () {
    WebDriverManager.chromedriver().setup();
    driver = new ChromeDriver();
