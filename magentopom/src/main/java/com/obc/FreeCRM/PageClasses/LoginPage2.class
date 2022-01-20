@@ -1,0 +1,19 @@
+package com.obc.magentoobjects.magentopom;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class Login extends WelcomePage{
+
+	public void Login(Webdriver driver){
+		super(driver);
+
+
+	}
+	public void loginPage(){
+		driver.findElement(By.xpath("//input[@type='text']")).sendKeys("pasupunoorisahas@gmail.com");
+		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("Freecrm@174");
+		driver.findElement(By.xpath("//div[text()='Login']")).click();
+	}
+
+
